@@ -1,0 +1,55 @@
+URL- http://localhost:50460/API/ShopAPI/AddInventory
+
+1-Inventory Add API
+POST Method-
+http://localhost:50460/API/ShopAPI/AddInventory
+
+i/p-
+{
+    "Id":"",
+    "Name":"Item1",
+    "Description":"Item1",
+    "Price":"450",
+    "Flag":"Insert"  -------- check flag insert/Update/delete command.
+}
+o/p-
+
+"Inventory Added"
+
+2. Inventory Modify/Update API
+http://localhost:50460/API/ShopAPI/AddInventory
+
+i/p-
+{
+    "Id":"",  ----- id mandatory to upadte record
+    "Name":"Item1",
+    "Description":"item desc",
+    "Price":"450",
+    "Flag":"Update"  -------- check flag insert/Update/delete command.
+}
+o/p-
+
+"Inventory Updated"
+
+2. Inventory remove/delete API
+http://localhost:50460/API/ShopAPI/AddInventory
+
+i/p-
+{
+    "Id":"",  ----- id mandatory to upadte record
+    "Name":"Item1",
+    "Description":"item desc",
+    "Price":"450",
+    "Flag":"delete"  -------- check flag insert/Update/delete command.
+}
+o/p-
+
+"Inventory removed"
+
+
+3. Show list Inventory
+GET Method-
+http://localhost:50460/API/ShopAPI/GetAllinventoryDtls
+
+o/p-
+[{"Id":1,"Name":"Mobile","Description":"Nokia","Price":12450.0,"flag":null},{"Id":2,"Name":"Laptop","Description":"Lenovo","Price":45680.0,"flag":null},{"Id":4,"Name":"Item1","Description":"Item1","Price":450.0,"flag":null}]
